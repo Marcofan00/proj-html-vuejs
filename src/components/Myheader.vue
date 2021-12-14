@@ -67,4 +67,9 @@ export default {
         }
     }
 }
+@media screen and (max-width: 1215px) {
+    .info-contacts-container{
+        width: 95% !important;
+    }
+}
 </style>

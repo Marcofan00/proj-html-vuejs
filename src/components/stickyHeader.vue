@@ -1,5 +1,5 @@
 <template>
-	<div class="stickyheader-container" :class="{nav_colored: scrollPosition > 50}">
+	<div class="stickyheader-container">
 		<div class="nav-container">
 		<div class="nav-left">
 			<div class="logo-container">
@@ -22,52 +22,10 @@
 <script>
 export default {
   name: "stickyHeader",
-    data() {
-        return{
-            scrollPosition: null
-        }
-    },
+  
 	props:{
 		headerElements: Array
-	},
-    mounted() {
-        window.addEventListener('scroll', this.updateScroll);
-		let home = document.getElementById('scrollHome')
-		home.addEventListener('click', this.scrollHome)
-        let about = document.getElementById('scrollAbout')
-        about.addEventListener('click', this.scrollAbout)
-        let services = document.getElementById('scrollServices')
-        services.addEventListener('click', this.scrollServices)
-        let pricing = document.getElementById('scrollPricing')
-        pricing.addEventListener('click', this.scrollPricing)
-        let blog = document.getElementById('scrollBlog')
-        blog.addEventListener('click', this.scrollBlog)
-        let touch = document.getElementById('scrollTouch')
-        touch.addEventListener('click', this.scrollTouch)
-    },
-    methods: {
-        updateScroll() {
-            this.scrollPosition = window.scrollY
-        },
-		scrollHome(){
-			window.scrollTo(0, document.getElementById('home').offsetTop-0);
-		},
-        scrollAbout(){
-            window.scrollTo(0, document.getElementById('about').offsetTop-30);
-        },
-        scrollServices(){
-            window.scrollTo(0, document.getElementById('services').offsetTop-30);
-        },
-        scrollPricing(){
-            window.scrollTo(0, document.getElementById('pricing').offsetTop-30);
-        },
-        scrollBlog(){
-            window.scrollTo(0, document.getElementById('blog').offsetTop-30);
-        },
-        scrollTouch(){
-            window.scrollTo(0, document.getElementById('touch').offsetTop-30);
-        }
-    }   
+	},    
 };
 </script>
 
@@ -78,7 +36,7 @@ export default {
 	justify-content: center;
 	position: sticky;
 	top: -1px;
-	z-index: 3;
+	z-index: 1;
 	width: 100%;
 	transition: all 0.3s;
 	background-color: transparent;
@@ -87,7 +45,6 @@ export default {
 		justify-content: space-between;
 		width: 75%;
 		height: 50px;
-		z-index: 1;
 		align-items: center;
 		margin: 1rem 0;
 		.nav-left{

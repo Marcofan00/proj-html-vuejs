@@ -3,7 +3,9 @@
         <stickyHeader :headerElements="this.headerData"/>
         <div class="site-content">
             <Myhero id="home"/>
-            
+            <cards />
+            <aboutNetwork />
+            <businessArea />
         </div>    
     </div>
 </template>
@@ -11,44 +13,43 @@
 <script>
 import Myhero from './Myhero.vue'
 import stickyHeader from './stickyHeader.vue'
-
+import cards from './cards.vue'
+import aboutNetwork from './aboutNetwork.vue'
+import businessArea from './businessArea.vue'
 export default {
     name: "Mymain",
     components:{
         Myhero,
         stickyHeader,
+        cards,
+        aboutNetwork,
+        businessArea,
     },
     data(){
         return{
             headerData : [
                 {
                     name: 'HOME',
-                    id: 'scrollHome',
-                    class: 'link'
+                    
                 },
                 {
                     name: 'ABOUT',
-                    id: 'scrollAbout',
-                    class: 'link'
+                    
                 },
                 {
                     name: 'SERVICES',
-                    id: 'scrollServices',
-                    class: 'link'
+                   
                 },
                 {
                     name: 'PRICING',
-                    id: 'scrollPricing',
-                    class: 'link'
+                   
                 },
                 {
                     name: 'BLOG',
-                    id: 'scrollBlog',
-                    class: 'link'
+                    
                 },
                 {
                     name: 'GET IN TOUCH',
-                    id: 'scrollTouch',
                     class: 'btn'
                 }
             ],           

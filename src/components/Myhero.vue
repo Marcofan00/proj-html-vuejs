@@ -34,19 +34,20 @@ export default {
 <style lang="scss">
 
 .hero-container{
-    height: calc(100vh - 30px);
     display: flex;
     justify-content: center;
     position: relative;
-    overflow: hidden;
-    
+
     .hero-background{
       filter: brightness(0.4);
       background-size: cover;
-     
+      
 
     }
-
+    img{
+        height: 100%;
+        width: 100%;
+    }
     .hero-content{
         position: absolute;
         top: 35%;
@@ -77,7 +78,7 @@ export default {
                     background-color: #0d7e7e;
                     height: 100%;
                     width: 100%;
-                    filter: opacity(0.1);
+                    filter: opacity(0.2);
                     text-align: center;
                 }
             }
