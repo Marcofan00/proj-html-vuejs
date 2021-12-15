@@ -8,6 +8,8 @@
             <businessArea />
              <pricing />
              <news />
+              <newsletter />
+              <message />
         </div>    
     </div>
 </template>
@@ -20,6 +22,9 @@ import aboutNetwork from './aboutNetwork.vue'
 import businessArea from './businessArea.vue'
 import pricing from './pricing.vue'
 import news from './news.vue'
+import newsletter from './newsletter.vue'
+import message from './message.vue'
+
 export default {
     name: "Mymain",
     components:{
@@ -30,6 +35,9 @@ export default {
         businessArea,
         pricing,
         news,
+        newsletter,
+        message,
+
     },
     data(){
         return{
