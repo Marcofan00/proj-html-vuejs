@@ -7,6 +7,7 @@
             <aboutNetwork />
             <businessArea />
              <pricing />
+             <news />
         </div>    
     </div>
 </template>
@@ -18,6 +19,7 @@ import cards from './cards.vue'
 import aboutNetwork from './aboutNetwork.vue'
 import businessArea from './businessArea.vue'
 import pricing from './pricing.vue'
+import news from './news.vue'
 export default {
     name: "Mymain",
     components:{
@@ -27,6 +29,7 @@ export default {
         aboutNetwork,
         businessArea,
         pricing,
+        news,
     },
     data(){
         return{
