@@ -2,7 +2,7 @@
   <div id="app">
     <Myheader />
     <Mymain />
-    <Myfooter />
+    <Myfooter :footerElements="this.footerData"/>
   </div>
 </template>
 <script>
@@ -15,7 +15,84 @@ export default {
     Myheader,
     Mymain,
     Myfooter
-  }
+  },
+
+  data(){
+        return{
+            footerData: [
+                {
+                    title: 'About',
+                    links: [
+                        {
+                            name: 'The Company'
+                        },
+                        {
+                            name: 'Institutional'
+                        },
+                        {
+                            name: 'Social & Events'
+                        },
+                        {
+                            name: 'Innovation'
+                        },
+                        {
+                            name: 'Environment'
+                        },
+                        {
+                            name: 'Technologyy'
+                        },
+                    ]
+                },
+                {
+                    title: 'Services',
+                    links: [
+                        {
+                            name: 'Audit & Assurance'
+                        },
+                        {
+                            name: 'Financial Advisory'
+                        },
+                        {
+                            name: 'Analytics M&A'
+                        },
+                        {
+                            name: 'Middle Marketing'
+                        },
+                        {
+                            name: 'Legal Consulting'
+                        },
+                        {
+                            name: 'Regulatory Risk'
+                        },
+                    ]
+                },
+                {
+                    title: 'Support',
+                    links: [
+                        {
+                            name: 'Responsability'
+                        },
+                        {
+                            name: 'Terms of use'
+                        },
+                        {
+                            name: 'About Cookies'
+                        },
+                        {
+                            name: 'Privacy Policy'
+                        },
+                        {
+                            name: 'Accessibility'
+                        },
+                        {
+                            name: 'Information'
+                        },
+                    ]
+                },
+            ]
+        }
+    }
+
 }
 </script>
 
