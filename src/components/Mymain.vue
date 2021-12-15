@@ -6,6 +6,7 @@
             <cards />
             <aboutNetwork />
             <businessArea />
+             <pricing />
         </div>    
     </div>
 </template>
@@ -16,6 +17,7 @@ import stickyHeader from './stickyHeader.vue'
 import cards from './cards.vue'
 import aboutNetwork from './aboutNetwork.vue'
 import businessArea from './businessArea.vue'
+import pricing from './pricing.vue'
 export default {
     name: "Mymain",
     components:{
@@ -24,13 +26,14 @@ export default {
         cards,
         aboutNetwork,
         businessArea,
+        pricing,
     },
     data(){
         return{
             headerData : [
                 {
                     name: 'HOME',
-                    
+
                 },
                 {
                     name: 'ABOUT',
